@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Image Rollover</title>
+        <script language="JavaScript"
+        type="text/JavaScript">
+        function bigImg(x) {
+            x.style.height = "606px";
+            x.style.width = "355px";             
+        }
+
+        function normalImg(x) {
+            x.style.height = "206px";
+            x.style.width = "155px";
+        }
+        </script>
+        </head>
+        <body>
+            <h1>WELCOME</h1>
+            <img onmouseover="bigImg(this)"
+            onmouseout="normalImg(this)" 
+            src="image.jpg" alt="image" width="155" 
+            height="206" class="center">
+            <p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+            <p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+            <h2>By Joe George</h2>
+        </body>
+        </html>
